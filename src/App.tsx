@@ -8,13 +8,15 @@ import { SignUp } from "./components/SignUp";
 import { RootState } from "./store";
 import { setUser } from "./store/slice/userSlice";
 import { getUserLS } from "./utils/storageUser";
-import {} from "firebase/auth";
 import { NotFound } from "./components/NotFound";
+import { useEffect } from "react";
 
 function App() {
   const useAppSelector: TypedUseSelectorHook<RootState> = useSelector;
   const dispatch = useDispatch();
-  dispatch(setUser(getUserLS()));
+  useEffect(() => {
+    dispatch(setUser(getUserLS()));
+  }, [dispatch]);
   return (
     <div className="App">
       <Routes>

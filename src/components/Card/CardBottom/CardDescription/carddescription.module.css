@@ -1,0 +1,12 @@
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 630px;
+}
+
+.paragraph {
+  font-size: 16px;
+  line-height: 22px;
+}

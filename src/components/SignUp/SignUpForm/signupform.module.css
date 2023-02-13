@@ -1,0 +1,70 @@
+.signupForm {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.signupInputContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.signupLabel {
+  margin-bottom: 8px;
+  color: var(--Black);
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.signupInput {
+  padding: 16px;
+  margin-bottom: 4px;
+  border: none;
+  border-radius: 8px;
+  color: var(--Gray);
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.signupError {
+  color: var(--Red);
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.passBtn {
+  position: absolute;
+  top: 42px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.signupBtn {
+  padding: 13px 156px;
+  border-radius: 8px;
+  color: var(--White);
+  font-size: 16px;
+  line-height: 22px;
+  background-color: var(--Violet);
+  cursor: pointer;
+}
+
+[aria-invalid] {
+  border: 1px solid var(--Red);
+}
+
+.signupBtn:disabled {
+  filter: grayscale(0.5);
+}
+
+@media (max-width: 600px) {
+  .signupInput {
+    max-width: 99%;
+  }
+
+  .signupBtn {
+    padding: 13px 93px;
+  }
+}

@@ -1,0 +1,18 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contact {
+  display: flex;
+}
+
+.contactValue {
+  margin-left: 10px;
+  font-size: 16px;
+  line-height: 22px;
+  color: var(--Black);
+  white-space: nowrap;
+  transform: translateY(-3px);
+}

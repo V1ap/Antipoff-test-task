@@ -1,0 +1,35 @@
+.catalogItem {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  padding: 36px;
+}
+
+.catalogItemAvatar {
+  width: 124px;
+  height: 124px;
+  margin-bottom: 16px;
+  border-radius: 50%;
+}
+
+.catalogItemName {
+  color: var(--Black);
+  font-size: 20px;
+  line-height: 23px;
+  transition: color 0.3s ease;
+}
+
+.catalogItemName:hover {
+  color: var(--Violet);
+}
+
+.catalogItemLike {
+  position: absolute;
+  bottom: 28px;
+  right: 28px;
+  cursor: pointer;
+}

@@ -1,0 +1,21 @@
+.cardBottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 129px;
+  padding: 50px 150px;
+}
+
+@media (max-width: 1000px) {
+  .cardBottom {
+    padding: 30px 50px;
+  }
+}
+
+@media (max-width: 800px) {
+  .cardBottom {
+    flex-direction: column-reverse;
+    gap: 34px;
+    padding: 30px 16px;
+  }
+}

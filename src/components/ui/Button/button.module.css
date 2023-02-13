@@ -1,0 +1,11 @@
+.customBtn {
+  position: absolute;
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid var(--Gray_light);
+  color: var(--Gray_light);
+  font-size: 16px;
+  line-height: 22px;
+  background: transparent;
+  cursor: pointer;
+}

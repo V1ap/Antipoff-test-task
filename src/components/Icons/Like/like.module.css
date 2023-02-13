@@ -1,0 +1,7 @@
+.active {
+  fill: var(--Violet);
+}
+
+.active path {
+  stroke: var(--Violet);
+}
